@@ -1,4 +1,5 @@
 function AddPage() {
+
   return (
     <div className="p-6">
       <h1 className="text-2xl font-semibold mb-6">Thêm mới</h1>
@@ -7,28 +8,44 @@ function AddPage() {
         {/* Text input */}
         <div>
           <label htmlFor="text" className="block font-medium mb-1">
-            Text
+            Name
           </label>
           <input
             type="text"
-            id="text"
+            id="name"
             className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        </div>
-
-        {/* Select */}
-        <div>
-          <label htmlFor="selectOption" className="block font-medium mb-1">
-            Select - option
+          <label htmlFor="text" className="block font-medium mb-1">
+            Teacher
           </label>
-          <select
-            id="selectOption"
-            className="w-full border rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+          <input
+            type="text"
+            id="teacher"
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          {/* Select */}
+          <div>
+            <label htmlFor="category" className="block font-medium mb-1">
+              Category
+            </label>
+            <select
+              id="category"
+              className="w-full border rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="Chuyên ngành">Chuyên ngành</option>
+              <option value="Cơ sở">Cơ sở</option>
+              <option value="Đại cương">Đại cương</option>
+            </select>
+          </div>
+
+          <label htmlFor="credit" className="block font-medium mb-1">
+            Credit
+          </label>
+          <input
+            type="text"
+            id="credit"
+            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
         </div>
 
         {/* Submit button */}
